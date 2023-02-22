@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- *
- *
- *
- *
+ * print_line - prints as much underscore as the value of n
+ * @n: the number of _
  */
 
 void print_line(int n)
