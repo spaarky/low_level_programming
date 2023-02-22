@@ -32,7 +32,8 @@ int main(void)
 		{
 			printf("%i ", n);
 		}
-		putchar('\n');
+		
 	}
+	putchar('\n');
 	return (0);
 }
