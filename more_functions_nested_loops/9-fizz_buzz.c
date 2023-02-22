@@ -1,9 +1,13 @@
 #include <stdio.h>
 
 /**
+ * main - prints number from 1 to 100
+ * 
+ * Fizz: replace the number if it is [3]
  *
+ * Buzz: replace the number if it is [5]
  *
- *
+ * Return: always 0
  */
 
 int main(void)
@@ -28,6 +32,7 @@ int main(void)
 		{
 			printf("%i ", n);
 		}
+		putchar('\n');
 	}
 	return (0);
 }
