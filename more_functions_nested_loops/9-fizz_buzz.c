@@ -2,7 +2,7 @@
 
 /**
  * main - prints number from 1 to 100
- * 
+ *
  * Fizz: replace the number if it is [3]
  *
  * Buzz: replace the number if it is [5]
@@ -32,7 +32,7 @@ int main(void)
 		{
 			printf("%i", n);
 		}
-		if (n < 100) 
+		if (n < 100)
 		{
 			putchar(' ');
 		}
