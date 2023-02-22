@@ -2,11 +2,7 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
- *
- *
+ * more_numbers - prints 1234567891011121314\n 10 times
  */
 
 void more_numbers(void)
