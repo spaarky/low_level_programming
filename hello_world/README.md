@@ -36,19 +36,19 @@ Betty is a linter tool for shell scripts that is written in C programming langua
 -----------------------
 
 ## **Tasks**
-- **Task : _Preprocessor_**<br>
+- **Task 0: _Preprocessor_**<br>
     [0-preprocessor](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/0-preprocessor) - asked for a script that _runs a C file through the preprocessor and save the result into another file_, here `gcc -E $CFILE -o c`.
 
-- **Task : _Compiler_**<br>
+- **Task 1: _Compiler_**<br>
     [1-compiler](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/1-compiler) - asked for a script that _compiles a C file but does not link_, here `gcc -c $CFILE`.
 
-- **Task : _Assembler_**<br>
+- **Task 2: _Assembler_**<br>
     [2-assembler](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/2-assembler) - asked for a script that _compiles a C file and creates an executable named `cisfun`_, here `gcc $CFILE -o cisfun`.
 
-- **Task : _Name_**<br>
+- **Task 3: _Name_**<br>
     [3-name](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/3-name) - asked for a script that _prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line_, here `gcc $CFILE -o cisfun`.
 
-- **Task : _Hello, puts_**<br>
+- **Task 4: _Hello, puts_**<br>
     [4-puts.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/4-puts.c) - asked for a script that _prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line_.
     ```c
     int main(void)
@@ -58,7 +58,7 @@ Betty is a linter tool for shell scripts that is written in C programming langua
     }
     ```
 
-- **Task : _Hello, printf_**<br>
+- **Task 5: _Hello, printf_**<br>
     [5-printf.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/5-printf.c) - asked for a script that _prints exactly `with proper grammar, but the outcome is a piece of art,` , followed by a new line_.
 
     ```c
@@ -69,7 +69,7 @@ Betty is a linter tool for shell scripts that is written in C programming langua
     }
     ```
 
-- **Task : _Size is not grandeur, and territory does not make a nation_**<br>
+- **Task 6: _Size is not grandeur, and territory does not make a nation_**<br>
     [6-size.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/6-size.c) - asked for a script that _prints the size of various types on the computer it is compiled and run on_.
 
     ```c
@@ -85,10 +85,10 @@ Betty is a linter tool for shell scripts that is written in C programming langua
     }
     ```
 
-- **Advanced Task : _Intel_**<br>
+- **Advanced Task 7: _Intel_**<br>
     [100-intel](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/100-intel) - asked for a script that _generates the assembly code (Intel syntax) of a C code and save it in an output file_, here `gcc -S -masm=intel $CFILE`.
 
-- ** Advanced Task : _UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity_**<br>
+- **Advanced Task 8: _UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity_**<br>
     [101-quote.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/101-quote.c) - asked for a script that _prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error_.
     ```c  
     int main(void)
