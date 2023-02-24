@@ -1,7 +1,5 @@
 # <p align="center">**C - Hello, World**</p>
 
-<img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet.project.files/holbertonschool-low_level_programming/212/cisfun.jpg" width="100%">
-
 ## <p align="center">**Description**</p>
 
 ### **Betty**
@@ -35,13 +33,72 @@ Betty is a linter tool for shell scripts that is written in C programming langua
 
 ## **Tasks**
 - **Task 0: _Positive anything is better than negative nothing_**<br>
-    [0-positive_or_negative.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/0-positive_or_negative.c) - asked for a script that __, here ``.
+    [0-positive_or_negative.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/0-positive_or_negative.c) - asked for a script that __.
+    ```c
+    int main(void)
+
+    {
+	    int n;
+
+	    srand(time(0));
+	    n = rand() - RAND_MAX / 2;
+	    if (n > 0)
+	    {
+		    printf("%d is positive\n", n);
+	    }
+	    else if (n == 0)
+	    {
+		    printf("%d is zero\n", n);
+	    }
+	    else
+	    {
+		    printf("%d is negative\n", n);
+	    }
+	    return (0);
+    }
+    ```
 
 - **Task 1: _The last digit_**<br>
-    [1-last_digit.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/1-last_digit.c) - asked for a script that __, here ``.
+    [1-last_digit.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/1-last_digit.c) - asked for a script that __.
+    ```c
+    int main(void)
+    {
+	    int n;
+
+	    srand(time(0));
+	    n = rand() - RAND_MAX / 2;
+	    printf("Last digit of %d is ", n);
+	    if (n % 10 > 5)
+	    {
+	    	printf("%d and is greater than 5\n", n % 10);
+	    }
+	    else if (n % 10 == 0)
+	    {
+	    	printf("%d and is 0\n", n % 10);
+	    }
+	    else if (n % 10 != 0 && n % 10 < 6)
+	    {
+	        printf("%d and is less than 6 and not 0\n", n % 10);
+	    }
+	    return (0);
+    }
+    ```
 
 - **Task 2: _ I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game_**<br>
-    [2-print_alphabet.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/2-print_alphabet.c) - asked for a script that __, here ``.
+    [2-print_alphabet.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/2-print_alphabet.c) - asked for a script that __.
+    ```c
+    int main(void)
+    {
+	    char a;
+
+	    for (a = 'a'; a <= 'z'; a++)
+	    {
+		    putchar(a);
+	    }
+	    putchar('\n');
+	    return (0);
+    }
+```
 
 - **Task 3: _Name_**<br>
     [3-name](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/3-name) - asked for a script that _prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line_, here `gcc $CFILE -o cisfun`.
