@@ -42,43 +42,58 @@ Betty is a linter tool for shell scripts that is written in C programming langua
 - **Task : _Compiler_**<br>
     [1-compiler](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/1-compiler) - asked for a script that _compiles a C file but does not link_, here `gcc -c $CFILE`.
 
+- **Task : _Assembler_**<br>
+    [2-assembler](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/2-assembler) - asked for a script that _compiles a C file and creates an executable named `cisfun`_, here `gcc $CFILE -o cisfun`.
+
 - **Task : _Name_**<br>
-    [](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/) - asked for a script that _compiles a C file and creates an executable named `cisfun`_, here `gcc $CFILE -o cisfun`.
+    [3-name](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/3-name) - asked for a script that _prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line_, here `gcc $CFILE -o cisfun`.
 
 - **Task : _Hello, puts_**<br>
-    [](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/) - asked for a script that _prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line_
-    <details>
-    <summary>Code</summary>
-    ```
+    [4-puts.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/4-puts.c) - asked for a script that _prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line_.
+    ```c
     int main(void)
     {
         puts("\"Programming is like building a multilingual puzzle");
         return (0);
     }
     ```
-    </details>
 
-- **Task : __**<br>
-    [](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/) - asked for a script that __, here ``.
+- **Task : _Hello, printf_**<br>
+    [5-printf.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/5-printf.c) - asked for a script that _prints exactly `with proper grammar, but the outcome is a piece of art,` , followed by a new line_.
 
-- **Task : __**<br>
-    [](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/) - asked for a script that __, here ``.
+    ```c
+    int main(void)
+    {
+	    printf("with proper grammar, but the outcome is a piece of art,\n");
+	    return (0);
+    }
+    ```
 
-- **Task : __**<br>
-    [](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/) - asked for a script that __, here ``.
+- **Task : _Size is not grandeur, and territory does not make a nation_**<br>
+    [6-size.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/6-size.c) - asked for a script that _prints the size of various types on the computer it is compiled and run on_.
 
-- **Task : __**<br>
-    [](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/) - asked for a script that __, here ``.
+    ```c
+    int main(void)
+    {
+	    printf("Size of a char: %zu byte(s)\n", sizeof(char));
+	    printf("Size of an int: %zu byte(s)\n", sizeof(int));
+	    printf("Size of a long int: %zu byte(s)\n", sizeof(long int));
+	    printf("Size of a long long int: %zu byte(s)\n", sizeof(long long int));
+	    printf("Size of a float: %zu byte(s)\n", sizeof(float));
 
-- **Task : __**<br>
-    [](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/) - asked for a script that __, here ``.
+	    return (0);
+    }
+    ```
 
-- **Task : __**<br>
-    [](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/) - asked for a script that __, here ``.
+- **Advanced Task : _Intel_**<br>
+    [100-intel](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/100-intel) - asked for a script that _generates the assembly code (Intel syntax) of a C code and save it in an output file_, here `gcc -S -masm=intel $CFILE`.
 
-- **Task : __**<br>
-    [](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/) - asked for a script that __, here ``.
-
-- **Task : __**<br>
-    [](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/) - asked for a script that __, here ``.
-
+- ** Advanced Task : _UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity_**<br>
+    [101-quote.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/101-quote.c) - asked for a script that _prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error_.
+    ```c  
+    int main(void)
+    {
+	    write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	    return (1);
+    } 
+    ```
