@@ -33,7 +33,7 @@ Betty is a linter tool for shell scripts that is written in C programming langua
 
 ## **Tasks**
 - **Task 0: _Positive anything is better than negative nothing_**<br>
-    [0-positive_or_negative.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/0-positive_or_negative.c) - asked for a script that __.
+    [0-positive_or_negative.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/0-positive_or_negative.c).
     ```c
     int main(void)
 
@@ -59,7 +59,7 @@ Betty is a linter tool for shell scripts that is written in C programming langua
     ```
 
 - **Task 1: _The last digit_**<br>
-    [1-last_digit.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/1-last_digit.c) - asked for a script that __.
+    [1-last_digit.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/1-last_digit.c).
     ```c
     int main(void)
     {
@@ -85,7 +85,7 @@ Betty is a linter tool for shell scripts that is written in C programming langua
     ```
 
 - **Task 2: _ I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game_**<br>
-    [2-print_alphabet.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/2-print_alphabet.c) - asked for a script that __.
+    [2-print_alphabet.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/2-print_alphabet.c).
     ```c
     int main(void)
     {
@@ -98,57 +98,226 @@ Betty is a linter tool for shell scripts that is written in C programming langua
 	    putchar('\n');
 	    return (0);
     }
-```
+	```
 
-- **Task 3: _Name_**<br>
-    [3-name](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/3-name) - asked for a script that _prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line_, here `gcc $CFILE -o cisfun`.
+- **Task 3: _alphABET_**<br>
+    [3-print_alphabets.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/3-print_alphabets.c).
+	```c
+	int main(void)
+	{
+		char a, b;
 
-- **Task 4: _Hello, puts_**<br>
-    [4-puts.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/4-puts.c) - asked for a script that _prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line_.
+		for (a = 'a'; a <= 'z'; a++)
+		{
+			putchar(a);
+		}
+		for (b = 'A'; b <= 'Z'; b++)
+		{
+			putchar(b);
+		}
+		putchar('\n');
+		return (0);
+	}
+	```
+
+- **Task 4: _When I was having that alphabet soup, I never thought that it would pay off_**<br>
+    [4-print_alphabt.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/4-print_alphabt.c).
     ```c
-    int main(void)
-    {
-        puts("\"Programming is like building a multilingual puzzle");
-        return (0);
-    }
+	int main(void)
+	{
+		char a;
+
+		for (a = 'a'; a <= 'z'; a++)
+		{
+			if (a == 'q' || a == 'e')
+			{
+				a++;
+			}
+			putchar(a);
+		}
+		putchar('\n');
+		return (0);
+	}
     ```
 
-- **Task 5: _Hello, printf_**<br>
-    [5-printf.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/5-printf.c) - asked for a script that _prints exactly `with proper grammar, but the outcome is a piece of art,` , followed by a new line_.
+- **Task 5: _Numbers_**<br>
+    [5-print_numbers.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/5-print_numbers.c).
 
     ```c
-    int main(void)
-    {
-	    printf("with proper grammar, but the outcome is a piece of art,\n");
-	    return (0);
-    }
+	int main(void)
+	{
+		char a;
+
+		for (a = '0'; a <= '9'; a++)
+		{
+			putchar(a);
+		}
+		putchar('\n');
+		return (0);
+	}
     ```
 
-- **Task 6: _Size is not grandeur, and territory does not make a nation_**<br>
-    [6-size.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/6-size.c) - asked for a script that _prints the size of various types on the computer it is compiled and run on_.
+- **Task 6: _Numberz_**<br>
+    [6-print_numberz.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/6-print_numberz.c).
 
     ```c
-    int main(void)
-    {
-	    printf("Size of a char: %zu byte(s)\n", sizeof(char));
-	    printf("Size of an int: %zu byte(s)\n", sizeof(int));
-	    printf("Size of a long int: %zu byte(s)\n", sizeof(long int));
-	    printf("Size of a long long int: %zu byte(s)\n", sizeof(long long int));
-	    printf("Size of a float: %zu byte(s)\n", sizeof(float));
+	int main(void)
+	{
+		int a;
 
-	    return (0);
-    }
+		for (a = '0'; a <= '9'; a++)
+		{
+			putchar(a);
+		}
+		putchar('\n');
+		return (0);
+	}
     ```
 
-- **Advanced Task 7: _Intel_**<br>
-    [100-intel](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/100-intel) - asked for a script that _generates the assembly code (Intel syntax) of a C code and save it in an output file_, here `gcc -S -masm=intel $CFILE`.
+- **Task 7: _Smile in the mirror_**<br>
+    [7-print_tebahpla.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/7-print_tebahpla.c).
+	```c
+	int main(void)
+	{
+		char a;
 
-- **Advanced Task 8: _UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity_**<br>
-    [101-quote.c](https://github.com/Spark4545/holbertonschool-shell/blob/master/io_redirection_and_filters/101-quote.c) - asked for a script that _prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error_.
+		for (a = 'z'; a >= 'a'; a--)
+		{
+			putchar(a);
+		}
+		putchar('\n');
+		return (0);
+	}
+    ```
+
+- **Task 8: _Hexadecimal_**<br>
+    [8-print_base16.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/8-print_base16.c).
     ```c  
-    int main(void)
-    {
-	    write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-	    return (1);
-    } 
+	int main(void)
+	{
+		char n;
+
+		for (n = '0'; n <= '9'; n++)
+		{
+			putchar(n);
+		}
+		for (n = 'a'; n <= 'f'; n++)
+		{
+			putchar(n);
+		}
+		putchar('\n');
+		return (0);
+	}
+    ```
+
+- **Task 9: _Patience, persistence and perspiration make an unbeatable combination for success_**<br>
+    [9-print_comb.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/9-print_comb.c).
+    ```c
+	int main(void)
+	{
+		int n;
+
+		for (n = '0'; n <= '9'; n++)
+		{
+			putchar(n);
+			if (n != '9')
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+		putchar('\n');
+		return (0);
+	}
+    ```
+
+- **Task 10: _Inventing is a combination of brains and materials. The more brains you use, the less material you need_**<br>
+    [100-print_comb3.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/100-print_comb3.c).
+    ```c  
+	int main(void)
+	{
+		int num1;
+		int num2;
+
+		for (num1 = 0; num1 < 9; num1++)
+		{
+			for (num2 = num1 + 1; num2 <= 9; num2++)
+			{
+				putchar((num1) + '0');
+				putchar((num2) + '0');
+				{
+					if (num1 == 8)
+						break;
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
+		}
+		putchar('\n');
+
+		return (0);
+	}
+    ```
+
+- **Advanced Task 11: _The success combination in business is: Do what you do better... and: do more of what you do..._**<br>
+    [101-print_comb4.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/101-print_comb4.c).
+    ```c
+	int main(void)
+	{
+		int num1, num2, num3;
+
+		for (num1 = 0; num1 < 9; num1++)
+		{
+			for (num2 = num1 + 1; num2 <= 9; num2++)
+			{
+				for (num3 = num2 + 1; num3 <= 9; num3++)
+				{
+					putchar((num1) + '0');
+					putchar((num2) + '0');
+					putchar((num3) + '0');
+					{
+						if (num1 == 7)
+							break;
+						{
+							putchar(',');
+							putchar(' ');
+						}
+					}
+				}
+			}
+		}
+		putchar('\n');
+		return (0);
+	} 
+    ```
+
+- **Advanced Task 12: _Software is eating the World_**<br>
+    [102-print_comb5.c](https://github.com/Spark4545/holbertonschool-low_level_programming/blob/master/variable_if_else_while/102-print_comb5.c).
+    ```c  
+	int main(void)
+	{
+		int num1, num2;
+
+		for (num1 = 0; num1 <= 100; num1++)
+		{
+			for (num2 = num1 + 1; num2 < 100; num2++)
+			{
+				putchar((num1 / 10) + '0');
+				putchar((num1 % 10) + '0');
+				putchar(' ');
+				putchar((num2 / 10) + '0');
+				putchar((num2 % 10) + '0');
+
+				if (num1 != 98)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+		putchar('\n');
+		return (0);
+	}
     ```
