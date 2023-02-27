@@ -2,6 +2,7 @@
 
 /**
  * _puts - print a string
+ * @str: variable with the string in it
  *
  * Return: always 0
  */
