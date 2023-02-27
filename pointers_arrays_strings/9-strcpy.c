@@ -19,19 +19,19 @@ int _strlen(char *s)
 }
 
 /**
- * _strcpy copies the string pointed by src into dest
+ * _strcpy - copies the string pointed by src into dest
  * @dest: destination
  * @src: source
  *
  * Return: dest
  */
 
-char *_strcpy(char *dest, char *src)
+char *_strcpy (char *dest, char *src)
 {
     int id = 0;
 
-    for (; id <= _strlen(src); id++)
+    for (; id <= _strlen (src); id++)
         dest[id] = src[id];
-    
-    return(dest);
+
+    return (dest);
 }
