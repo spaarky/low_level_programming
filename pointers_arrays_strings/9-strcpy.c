@@ -26,12 +26,12 @@ int _strlen(char *s)
  * Return: dest
  */
 
-char *_strcpy (char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
-    int id = 0;
+	int id = 0;
 
-    for (; id <= _strlen (src); id++)
-        dest[id] = src[id];
-
-    return (dest);
+	for (; id <= _strlen(src); id++)
+		dest[id] = src[id];
+	return (dest);
 }
+
