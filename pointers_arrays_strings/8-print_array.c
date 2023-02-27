@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *
- *
- *
+ * print_array - print array
+ * @a: *a
+ * @n: n
  */
 
 void print_array(int *a, int n)
