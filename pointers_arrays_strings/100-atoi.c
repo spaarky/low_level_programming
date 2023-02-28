@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
+ * _strlen - return the length of a string
+ * @s: the string
  *
- *
- *
+ * Return: the length
  */
 
 int _strlen(char *s)
@@ -19,9 +20,10 @@ int _strlen(char *s)
 }
 
 /**
+ * idx_num_starts - find the index of the first digit
+ * @s: string to search in
  *
- *
- *
+ * Return: index of the first digit
  */
 
 int idx_num_starts(char *s)
@@ -37,9 +39,10 @@ int idx_num_starts(char *s)
 }
 
 /**
+ * find_sign - determinate if the integer is neg by count of -
+ * @s: the integer
  *
- *
- *
+ * Return: -1 if neg
  */
 
 int find_sign(char *s)
@@ -58,8 +61,10 @@ int find_sign(char *s)
 }
 
 /**
+ * _atoi - convert a string into an int
+ * @s: the string to convert
  *
- *
+ * Return: the integer
  */
 
 int _atoi(char *s)
@@ -76,7 +81,8 @@ int _atoi(char *s)
 
 	sign = find_sign(s);
 
-	while ((s[idx_digit_starts] >= '0' && s[idx_digit_starts] <= '9') && (idx_digit_starts <= _strlen(s)))
+	while ((s[idx_digit_starts] >= '0' && s[idx_digit_starts] <= '9')
+			&& (idx_digit_starts <= _strlen(s)))
 	{
 		digit_to_print += 1;
 		idx_digit_starts++;
@@ -93,7 +99,7 @@ int _atoi(char *s)
 	for (a = digit; a < (digit + digit_to_print); a++)
 	{
 		num += (s[a] - '0') * t;
-		t /=10;
+		t /= 10;
 	}
 
 	return (num * sign);
