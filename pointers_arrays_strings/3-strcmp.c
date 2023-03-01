@@ -5,7 +5,7 @@
  * @s1: string
  * @s2: string
  *
- * Return: int that tells num spaces between 
+ * Return: int that tells num spaces between
  */
 
 int _strcmp(char *s1, char *s2)
