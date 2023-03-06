@@ -14,7 +14,7 @@ int is_prime(int n, int div)
 		return (1);
 	if (n % div == 0)
 		return (0);
-	return(is_prime(n, div + 1));
+	return (is_prime(n, div + 1));
 }
 
 /**
