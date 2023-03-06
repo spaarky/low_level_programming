@@ -2,7 +2,7 @@
 
 /**
  * is_prime - divide by higher and higher divisor
- * @a: to check
+ * @n: to check
  * @div: divisor
  *
  * Return: 1 if prime, 0 of not
