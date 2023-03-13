@@ -1,0 +1,40 @@
+{
+        // See https://go.microsoft.com/fwlink/?LinkId=733558
+        // for the documentation about the tasks.json format
+        "version": "2.0.0",
+        "tasks": [
+                {
+                        "label": "betty",
+                        "type": "shell",
+                        "command": "betty",
+                        "args": ["${file}"],
+			"options": {
+				"statusbar": {
+					"label": "Betty",
+					"color": "#E31C3F"
+				}
+			}
+                },
+		{
+			"label": "compile",
+			"type": "shell",
+			"command": "gcc",
+			"args": [
+				"-Wall",
+				"-pedantic",
+				"-Werror",
+				"-Wextra",
+				"-std=gnu89",
+				"${fileDirname}/${fileBasename}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}"
+			],
+			"options": {
+				"statusbar": {
+					"label": "compiler",
+					"color": "#5DD91B"
+				}
+			}
+		}
+        ]
+}
