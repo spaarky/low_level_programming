@@ -24,7 +24,7 @@ int _strlen(const char *str)
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_node; /*create a new node*/
+	list_t *newnode;
 
 	if (str == NULL) /*validating input*/
 		return (NULL);
@@ -32,20 +32,20 @@ list_t *add_node(list_t **head, const char *str)
 	if (strdup(str) == NULL) /*check malloc error*/
 		return (NULL);
 
-	new_node = malloc(sizeof(list_t)); /*malloc for the new node  created*/
-	if (new_node == NULL)
+	newnode = malloc(sizeof(list_t)); /*malloc for the new node  created*/
+	if (newnode == NULL)
 		return (NULL);
 
-	new_node->str = strdup(str); /*Set new_node values*/
-	new_node->len = _strlen(str);
+	newnode->str = strdup(str); /*Set newnode values*/
+	newnode->len = _strlen(str);
 
-	if (head == NULL) /*Set first POinting of new_node*/
-		new_node->next = NULL;
+	if (head == NULL) /*Set first POinting of newnode*/
+		newnode->next = NULL;
 
 	else
-		new_node->next = *head;
+		newnode->next = *head;
 
-	*head = new_node; /*Set heqd to point new_node*/
+	*head = newnode; /*Set heqd to point newnode*/
 
-	return (new_node);
+	return (newnode);
 }
