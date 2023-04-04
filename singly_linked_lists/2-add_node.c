@@ -14,6 +14,14 @@ int _strlen(const char *str)
 	return (len);
 }
 
+/**
+ * add_node - add node to beginning of the list
+ * @head: linked list
+ * @str: data for the new node
+ *
+ * Return: adress of new elements or NULL
+*/
+
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node; /*create a new node*/
