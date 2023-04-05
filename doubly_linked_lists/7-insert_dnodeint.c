@@ -1,7 +1,11 @@
 #include "lists.h"
 
 /**
+ * insertnode - insert node at a given index
+ * @tmp: pointer
+ * @n: node data
  *
+ * Return: adress of new node
 */
 
 dlistint_t *insertnode(dlistint_t *tmp, int n)
@@ -23,7 +27,12 @@ dlistint_t *insertnode(dlistint_t *tmp, int n)
 }
 
 /**
+ * insert_dnodeint_at_index - create and insert node at given index
+ * @h: pointer
+ * @idx: index
+ * @n: node data
  *
+ * Return: adress of inserted node or NULL
 */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
