@@ -20,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 	while (b[index])
 	{
 		if ((b[index] != '0') && (b[index] != '1'))
-			return (sum);
+			return (0);
 
 		if (b[index] == '1')
 			sum += (1 * (1 << length));
