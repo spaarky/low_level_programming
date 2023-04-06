@@ -3,7 +3,7 @@
 /**
  * binary_to_uint - convert base2 to base10
  * @b: to convert
- * 
+ *
  * Return: the converted or 0
 */
 
