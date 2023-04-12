@@ -10,9 +10,9 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-   	int fileDescriptor;
-   	ssize_t nRead, nWrite;
-    	char *buffer;
+	int fileDescriptor;
+	ssize_t nRead, nWrite;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
