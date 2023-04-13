@@ -18,7 +18,11 @@ int _strlen(char *str)
 }
 
 /**
- * append_text_to_file -
+ * append_text_to_file - append text and only if the file already exists
+ * @filename: file
+ * @text_content: text to append
+ *
+ * Return: 1 on success, -1 on error
 */
 
 int append_text_to_file(const char *filename, char *text_content)
