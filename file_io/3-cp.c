@@ -4,7 +4,7 @@
  * __exit - prints error messages and exits with exit value
  * @error: num is either exit value or file descriptor
  * @s: str is a name, either of the two filenames
- * @fileDescriptor: file descriptor
+ * @fd: file descriptor
  *
  * Return: 0 on success
  */
